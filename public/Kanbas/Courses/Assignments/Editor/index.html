@@ -1,0 +1,90 @@
+<table>
+    <tr>
+    <td>
+    <select>
+    <option>SpeedGrader</option></select><br />
+</td>
+</tr>
+<tr>
+<h2>Assignment Name</h2><br />
+<td><input type="text" value="A1 - ENV + HTML" /><br /></td>
+</tr>
+<tr>
+<textarea>This is the assignment description.</textarea><br /></tr>
+    <tr>
+      <td>Points<br /></td>
+      <td><input type="number" value="100" min="0" max="100" /><br /></td>
+    </tr>
+    <tr>
+      <td>Assignment Group<br /></td>
+      <td>
+        <select>
+          <option>ASSIGNMENTS</option>
+          <option>QUIZZES</option>
+          <option>EXAMS</option>
+          <option>PROJECT</option>
+        </select><br />
+      </td>
+    </tr>
+    <tr>
+      <td>Display Grade as<br /></td>
+      <td>
+      <select>
+        <option>Percentage</option>
+      </select><br /></td>
+    </tr>
+    <tr>
+      <td valign="top">Submission Type</td>
+      <td>
+        <select>
+          <option>Online</option>
+        </select>
+    </td>
+    </tr>
+    <tr>
+        <td>Online Entry Options</td>
+        <td>
+        <input type="checkbox" name="wd-entry-options" id="wd-text-entry" />
+        <label for="wd-text-entry">Text Entry</label><br />
+        <input type="checkbox" name="wd-entry-options" id="wd-website-url" />
+        <label for="wd-website-url">Website URL</label><br />
+        <input
+          type="checkbox"
+          name="wd-entry-options"
+          id="wd-media-recordings"
+        />
+        <label for="wd-media-recordings">Media Recordings</label><br />
+        <input
+          type="checkbox"
+          name="wd-entry-options"
+          id="wd-student-annotation"
+        />
+        <label for="wd-student-annotation">Student Annotation</label><br />
+        <input type="checkbox" name="wd-entry-options" id="wd-file-uploads" />
+        <label for="wd-file-uploads">File Uploads</label><br />
+      </td>
+    </tr>
+    <tr>
+      <td>Assign<br />
+      Assign to<br /></td>
+      <td><input type="text" value="Everyone" /><br />
+    </td>
+</tr>
+<tr>
+        <td>Due<br /></td>
+        <td><input name="wd-due-date" type="date" value="2021-01-01" /><br /></td>
+        <tr>
+        <td>Available from<br /></td>
+        <td><input name="wd-available-from" type="date" value="2021-01-01" /><br /></td>
+        </tr>
+        <tr>
+        <td>Until<br /></td>
+        <td><input name="wd-available-until" type="date" value="2021-01-01" /><br /></td>
+    </tr>
+    <td>
+        <button onclick="window.location.href='/Kanbas/Courses/Assignments/screen.html'">Cancel</button>
+        <button onclick="window.location.href='/Kanbas/Courses/Assignments/screen.html'">Save</button>
+    </td>
+
+  </tbody>
+</table>
