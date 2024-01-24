@@ -1,7 +1,6 @@
 <html>
   <head> </head>
   <body>
-    <form action="/Kanbas/Courses/Assignments/screen.html">
     <table width="100%">
       <tbody>
         <tr>
@@ -80,18 +79,21 @@
               </li>
             </ul>
           </td>
-          <td valign="top"><table><tr>
+          <td valign="top"><table>
+    <tr>
     <td>
     <select>
     <option>SpeedGrader</option></select><br />
 </td>
 </tr>
 <tr>
-<h2>Assignment Name</h2><br />
-<td><input type="text" value="A1 - ENV + HTML" /><br /></td>
+  <td>
+<h2>Assignment Name</h2>
+<input type="text" value="A1 - ENV + HTML" /><br /></td>
 </tr>
 <tr>
-<textarea>This is the assignment description.</textarea><br /></tr>
+  <td>
+<textarea>This is the assignment description.</textarea><br /></td></tr>
     <tr>
       <td>Points<br /></td>
       <td><input type="number" value="100" min="0" max="100" /><br /></td>
@@ -115,7 +117,7 @@
       </select><br /></td>
     </tr>
     <tr>
-      <td valign="top">Submission Type</td>
+      <td>Submission Type</td>
       <td>
         <select>
           <option>Online</option>
@@ -146,6 +148,20 @@
       </td>
     </tr>
     <tr>
+    <td>Group Assignments</td>
+    <td>
+      <input type="checkbox" id="allow-group-assignment" name="group-assignment" />
+      <label for="allow-group-assignment">Allow Group Assignment</label>
+    </td>
+  </tr>
+    <tr>
+    <td>Peer Reviews</td>
+    <td>
+      <input type="checkbox" id="allow-peer-review" name="peer-review" />
+      <label for="allow-peer-review">Allow Peer Review</label>
+    </td>
+  </tr>
+    <tr>
       <td>Assign<br />
       Assign to<br /></td>
       <td><input type="text" value="Everyone" /><br />
@@ -161,21 +177,12 @@
         <tr>
         <td>Until<br /></td>
         <td><input name="wd-available-until" type="date" value="2021-01-01" /><br /></td>
-    
     </tr>
-    <tr>
-    <td><button type="submit">Cancel</button>
-    <button type="submit">Save</button>
-    </form>
+    <td>
+        <a href="/Kanbas/Courses/Assignments/screen.html"><button>Cancel</button></a>
+        <a href="/Kanbas/Courses/Assignments/screen.html"><button>Save</button></a>
     </td>
-    </tr>
   </tbody>
 </table>
-</td>
-        </tr>
-      </tbody>
-    </table>
-
-
   </body>
 </html>
